@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "vitest": "^2.0.3"
+  },
+  "name": "js---kata-dni",
+  "description": "Realizar lo siguiente ejercicio sin orientación a objetos o con orientación a objetos (segunda opción recomendada).\r Calcula la letra del DNI (Documento nacional de identidad).",
+  "version": "1.0.0",
+  "main": "dniLetter.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConchyP/JS---Kata-DNI.git"
+  },
+  "author": "conchy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConchyP/JS---Kata-DNI/issues"
+  },
+  "homepage": "https://github.com/ConchyP/JS---Kata-DNI#readme"
+}
