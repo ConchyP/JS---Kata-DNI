@@ -1,18 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { DNI } from '../src/dniLetter.js'
+import { DNI } from '../dniLetter.js'
 
 describe('DNI', () => {
-    it('Should return the data entered is incorrect if the input is not an integer number', () => {
-        expect(() => new DNI('23A65443')).toThrow('The data entered is incorrect');
-    });
-
-    it('Should return the data entered is incorrect if the input is not in the rage between 0 and 99999999', () => {
-        expect(() => new DNI('-2')).toThrow('The data entered is incorrect');
-    });
-
-    it('Should return the data entered is incorrect if the input is not in the rage between 0 and 99999999', () => {
-        expect(() => new DNI('109989654')).toThrow('The data entered is incorrect');
-    });
 
     it('Should return W for the number 71775872', () => {
         const dni = new DNI(71775872);
@@ -32,6 +21,18 @@ describe('DNI', () => {
     it('Should return R for the number 99999999', () => {
         const dni = new DNI(99999999);
         expect(dni.calculateDNILetter()).toBe('R');
+    });
+
+    it('Should return the data entered is incorrect if the input is not an integer number', () => {
+        expect(() => new DNI('23A65443')).toThrow('The data entered is incorrect');
+    });
+
+    it('Should return the data entered is incorrect if the input is not in the rage between 0 and 99999999', () => {
+        expect(() => new DNI('-2')).toThrow('The data entered is incorrect');
+    });
+
+    it('Should return the data entered is incorrect if the input is not in the rage between 0 and 99999999', () => {
+        expect(() => new DNI('109989654')).toThrow('The data entered is incorrect');
     });
 
 });
