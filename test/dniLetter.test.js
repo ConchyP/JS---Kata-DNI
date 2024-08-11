@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { DNI } from '../dniLetter.js'
+import { DNI } from '../src/dniLetter.js'
 
 describe('DNI', () => {
 
