@@ -1,6 +1,5 @@
 // Funcion JS sin orientación a objetos
 
-
 function calculateDNIletter(dni) {
    
     if (!Number.isInteger(dni)) {
